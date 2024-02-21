@@ -1,0 +1,55 @@
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Work Sans', sans-serif;
+$white: rgba(255, 255, 255, 0.9);
+$grey: rgb(134, 134, 134);
+$green: rgb(255, 105, 180);
+
+$breakpoint-mobile-width: 1250px;
+
+$breakpoint-media-width: 1250px;
+
+$shadow-color: rgba(0, 0, 0, 0.9);
+
+$dark-mode: rgba(25, 25, 28, 1);
+
+.masonry-container {
+    max-width: 70%;
+
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 35px;
+
+    img {
+        width: 100%;
+    }
+
+    .masonry {
+        column-count: 4;
+        column-gap: 16px;
+    }
+
+    .masonry .Item {
+        display: inline-block;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    @media (max-width: 1199px) {
+        .masonry {
+            column-count: 3;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .masonry {
+            column-count: 2;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .masonry {
+            column-count: 1;
+        }
+    }
+
+}

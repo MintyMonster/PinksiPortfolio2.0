@@ -1,0 +1,38 @@
+.masonry-container {
+  max-width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 35px;
+}
+.masonry-container img {
+  width: 100%;
+}
+.masonry-container .masonry {
+  -moz-column-count: 4;
+       column-count: 4;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.masonry-container .masonry .Item {
+  display: inline-block;
+  margin-bottom: 16px;
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .masonry-container .masonry {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
+@media (max-width: 991px) {
+  .masonry-container .masonry {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+}
+@media (max-width: 767px) {
+  .masonry-container .masonry {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+}/*# sourceMappingURL=index.css.map */
